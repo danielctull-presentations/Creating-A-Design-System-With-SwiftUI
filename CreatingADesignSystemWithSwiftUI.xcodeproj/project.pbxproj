@@ -11,6 +11,7 @@
 		65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950F2A7CE27B009D2DFC /* ContentView.swift */; };
 		65ED95122A7CE27D009D2DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95112A7CE27D009D2DFC /* Assets.xcassets */; };
 		65ED95162A7CE27D009D2DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95152A7CE27D009D2DFC /* Preview Assets.xcassets */; };
+		65ED951E2A7CE2B3009D2DFC /* SlideUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65ED951D2A7CE2B3009D2DFC /* SlideUI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65ED951E2A7CE2B3009D2DFC /* SlideUI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +87,9 @@
 			dependencies = (
 			);
 			name = CreatingADesignSystemWithSwiftUI;
+			packageProductDependencies = (
+				65ED951D2A7CE2B3009D2DFC /* SlideUI */,
+			);
 			productName = CreatingADesignSystemWithSwiftUI;
 			productReference = 65ED950A2A7CE27B009D2DFC /* CreatingADesignSystemWithSwiftUI.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +118,9 @@
 				Base,
 			);
 			mainGroup = 65ED95012A7CE27B009D2DFC;
+			packageReferences = (
+				65ED951C2A7CE2B3009D2DFC /* XCRemoteSwiftPackageReference "SlideUI" */,
+			);
 			productRefGroup = 65ED950B2A7CE27B009D2DFC /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -359,6 +367,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65ED951C2A7CE2B3009D2DFC /* XCRemoteSwiftPackageReference "SlideUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/danielctull-playground/SlideUI";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65ED951D2A7CE2B3009D2DFC /* SlideUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65ED951C2A7CE2B3009D2DFC /* XCRemoteSwiftPackageReference "SlideUI" */;
+			productName = SlideUI;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65ED95022A7CE27B009D2DFC /* Project object */;
 }
