@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		65093BCA2A88AF5900DB4AF2 /* Section1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65093BC92A88AF5900DB4AF2 /* Section1.swift */; };
+		65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */; };
 		65ED950E2A7CE27B009D2DFC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950D2A7CE27B009D2DFC /* App.swift */; };
 		65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950F2A7CE27B009D2DFC /* ContentView.swift */; };
 		65ED95122A7CE27D009D2DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95112A7CE27D009D2DFC /* Assets.xcassets */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		65093BC92A88AF5900DB4AF2 /* Section1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Section1.swift; sourceTree = "<group>"; };
+		65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.WhatIsADesignSystem.swift; sourceTree = "<group>"; };
 		65ED950A2A7CE27B009D2DFC /* CreatingADesignSystemWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatingADesignSystemWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ED950D2A7CE27B009D2DFC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		65ED950F2A7CE27B009D2DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +62,7 @@
 			children = (
 				65ED950D2A7CE27B009D2DFC /* App.swift */,
 				65093BC92A88AF5900DB4AF2 /* Section1.swift */,
+				65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */,
 				65ED950F2A7CE27B009D2DFC /* ContentView.swift */,
 				65ED951F2A7CE33A009D2DFC /* Styles.swift */,
 				65ED95112A7CE27D009D2DFC /* Assets.xcassets */,
@@ -153,6 +156,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */,
 				65ED95202A7CE33A009D2DFC /* Styles.swift in Sources */,
 				65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */,
 				65ED950E2A7CE27B009D2DFC /* App.swift in Sources */,
