@@ -33,13 +33,19 @@ struct TitleSlideStyle: SlideStyle {
 // MARK: - ContentSlideStyle
 
 extension SlideStyle where Self == ContentSlideStyle {
-    static var content: Self { Self() }
+
+    static func content(alignment: Alignment) -> Self {
+        Self(alignment: alignment)
+    }
 }
 
 struct ContentSlideStyle: SlideStyle {
 
+    let alignment: Alignment
+
     struct SlideWrapper: View {
 
+        let alignment: Alignment
         let configuration: SlideConfiguration
         @Environment(\.scale) var scale
 
@@ -52,8 +58,8 @@ struct ContentSlideStyle: SlideStyle {
                     .foregroundColor(.orange)
 
                 configuration.content
-                    .font(.system(size: scale * 16, weight: .light, design: .rounded))
-                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .leading)
+                    .font(.system(size: scale * 18, weight: .light, design: .rounded))
+                    .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: alignment)
 
                 configuration.footer
                     .font(.system(size: scale * 12, weight: .light, design: .rounded))
@@ -67,7 +73,7 @@ struct ContentSlideStyle: SlideStyle {
 
     func makeBody(configuration: Configuration) -> some View {
         Scale {
-            SlideWrapper(configuration: configuration)
+            SlideWrapper(alignment: alignment, configuration: configuration)
         }
         .foregroundColor(.black)
         .background(.white)

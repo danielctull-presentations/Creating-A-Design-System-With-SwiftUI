@@ -20,12 +20,14 @@ struct WhatIsADesignSystem: View {
 }
 
 struct Bullet<Content: View>: View {
+    @Environment(\.scale) private var scale
     let content: Content
     var body: some View {
         HStack {
             Text("\u{2022}")
             content
         }
+        .padding(4 * scale)
     }
 }
 
