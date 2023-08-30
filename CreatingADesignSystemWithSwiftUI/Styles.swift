@@ -61,7 +61,7 @@ struct ContentSlideStyle: SlideStyle {
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .padding(scale * 8)
-            .codeStyle(.monospace(size: scale * 14, weight: .light))
+            .codeStyle(.fitting(idealSize: scale * 14))
         }
     }
 
@@ -75,24 +75,33 @@ struct ContentSlideStyle: SlideStyle {
     }
 }
 
-// MARK: - MonospaceCodeStyle
+// MARK: - FittingCodeStyle
 
-extension CodeStyle where Self == MonospaceCodeStyle {
+extension CodeStyle where Self == FittingCodeStyle {
 
-    static func monospace(size: CGFloat, weight: Font.Weight = .regular) -> Self {
-        Self(size: size, weight: weight)
+    static func fitting(idealSize: CGFloat, weight: Font.Weight = .regular) -> Self {
+        Self(idealSize: idealSize, weight: weight)
     }
 }
 
-struct MonospaceCodeStyle: CodeStyle {
+struct FittingCodeStyle: CodeStyle {
 
-    fileprivate let size: CGFloat
-    fileprivate let weight: Font.Weight
+    private let weight: Font.Weight
+    private let sizes: [Int]
+
+    fileprivate init(idealSize: CGFloat, weight: Font.Weight) {
+        self.weight = weight
+        self.sizes = (0...Int(idealSize)).reversed()
+    }
 
     func makeBody(configuration: Configuration) -> some View {
-        configuration.code
-            .lineSpacing(size / 10)
-            .font(.system(size: size, weight: .regular, design: .monospaced))
+        ViewThatFits {
+            ForEach(sizes, id: \.self) { size in
+                configuration.code
+                    .lineSpacing(CGFloat(size) / 8)
+                    .font(.system(size: CGFloat(size), weight: weight, design: .monospaced))
+            }
+        }
     }
 }
 
