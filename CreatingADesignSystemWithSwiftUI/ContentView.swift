@@ -21,9 +21,13 @@ struct ContentView: View {
 
 //            WhatIsADesignSystem()
 
-            DefiningTheProblem()
+//            DefiningTheProblem()
 
-            CreatingButtonStyle()
+//            CreatingButtonStyle()
+
+//            LabelButtons()
+
+            CreatingLabelStyleButton()
 
             // Start with a button using Label.
 

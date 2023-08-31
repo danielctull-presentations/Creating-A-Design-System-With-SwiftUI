@@ -2,6 +2,15 @@
 import SlideUI
 import SwiftUI
 
+private struct PrimaryButtonLabelStyle: LabelStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(spacing: 100) {
+            configuration.icon
+            configuration.title
+        }
+    }
+}
+
 private struct PrimaryButtonStyle: ButtonStyle {
 
     func makeBody(configuration: Configuration) -> some View {
@@ -10,6 +19,7 @@ private struct PrimaryButtonStyle: ButtonStyle {
             .padding(32)
             .background(.blue, in: RoundedRectangle(cornerRadius: 16))
             .foregroundColor(.white)
+            .labelStyle(PrimaryButtonLabelStyle())
     }
 }
 
@@ -17,18 +27,18 @@ extension ButtonStyle where Self == PrimaryButtonStyle {
     static var primary: Self { Self() }
 }
 
-struct CreatingButtonStyle: View {
+struct CreatingLabelStyleButton: View {
 
     var body: some View {
         Group {
 
-            Slide(header: "ButtonStyle") {
+            Slide {
                 Code {
                     """
-                    public protocol ButtonStyle {
+                    public protocol LabelStyle {
 
                         associatedtype Body: View
-                        typealias Configuration = ButtonStyleConfiguration
+                        typealias Configuration = LabelStyleConfiguration
 
                         @ViewBuilder func makeBody(configuration: Configuration) -> Body
                     }
@@ -36,9 +46,26 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Creating a Button Style") {
-                #Code {
-                    struct PrimaryButtonStyle: ButtonStyle {
+            Slide {
+                Code {
+                    """
+                    struct PrimaryButtonLabelStyle: LabelStyle {
+
+                        func makeBody(configuration: Configuration) -> some View {
+                            HStack(spacing: 100) {
+                                configuration.icon
+                                configuration.title
+                            }
+                        }
+                    }
+                    """
+                }
+            }
+
+            Slide {
+                Code {
+                    """
+                    private struct PrimaryButtonStyle: ButtonStyle {
 
                         func makeBody(configuration: Configuration) -> some View {
                             configuration.label
@@ -46,21 +73,10 @@ struct CreatingButtonStyle: View {
                                 .padding(32)
                                 .background(.blue, in: RoundedRectangle(cornerRadius: 16))
                                 .foregroundColor(.white)
+                                .labelStyle(PrimaryButtonLabelStyle())
                         }
                     }
-                }
-            }
 
-            Slide(header: "Suppose we're asked to design a button…") {
-                #CodePreview {
-                    Button("Press me", action: {})
-                        .buttonStyle(PrimaryButtonStyle())
-                }
-            }
-
-            Slide(header: "Ah, but what about discoverability?") {
-                Code {
-                    """
                     extension ButtonStyle where Self == PrimaryButtonStyle {
                         static var primary: Self { Self() }
                     }
@@ -68,19 +84,12 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Ah, but what about discoverability?") {
+            Slide {
                 #CodePreview {
-                    Button("Press me", action: {})
-                        .buttonStyle(.primary)
-                }
-            }
-
-            Slide(header: "We get image handling for nothing!") {
-                #CodePreview {
-                    Button {
-                    } label: {
-                        Image(systemName: "square.and.arrow.up")
-                    }
+                    Button(
+                        "Text",
+                        systemImage: "square.and.arrow.up",
+                        action: {})
                     .buttonStyle(.primary)
                 }
             }
