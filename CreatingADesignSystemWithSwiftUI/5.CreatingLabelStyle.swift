@@ -32,7 +32,7 @@ struct CreatingLabelStyleButton: View {
     var body: some View {
         Group {
 
-            Slide {
+            Slide(header: "LabelStyle") {
                 Code {
                     """
                     public protocol LabelStyle {
@@ -46,28 +46,27 @@ struct CreatingLabelStyleButton: View {
                 }
             }
 
-            Slide {
-                Code {
-                    """
+            Slide(header: "Creating a label style") {
+                #Code {
                     struct PrimaryButtonLabelStyle: LabelStyle {
 
                         func makeBody(configuration: Configuration) -> some View {
+
                             HStack(spacing: 100) {
                                 configuration.icon
                                 configuration.title
                             }
                         }
                     }
-                    """
                 }
             }
 
-            Slide {
-                Code {
-                    """
-                    private struct PrimaryButtonStyle: ButtonStyle {
+            Slide(header: "Use the label style in our primary button style") {
+                #Code {
+                    struct PrimaryButtonStyle: ButtonStyle {
 
                         func makeBody(configuration: Configuration) -> some View {
+
                             configuration.label
                                 .font(.system(size: 60))
                                 .padding(32)
@@ -76,15 +75,10 @@ struct CreatingLabelStyleButton: View {
                                 .labelStyle(PrimaryButtonLabelStyle())
                         }
                     }
-
-                    extension ButtonStyle where Self == PrimaryButtonStyle {
-                        static var primary: Self { Self() }
-                    }
-                    """
                 }
             }
 
-            Slide {
+            Slide(header: "Use the label style in our primary button style") {
                 #CodePreview {
                     Button(
                         "Text",

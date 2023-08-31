@@ -41,11 +41,11 @@ struct DefiningTheProblem: View {
     var body: some View {
         Group {
 
-            Slide(header: "Suppose we're asked to design a button…") {
+            Slide(header: "Suppose we're asked to make a button…") {
                 PrimaryButton(title: "Press me", action: {})
             }
 
-            Slide(header: "Suppose we're asked to design a button…") {
+            Slide(header: "Suppose we're asked to make a button…") {
                 #Code {
                     struct PrimaryButton: View {
 
@@ -63,7 +63,7 @@ struct DefiningTheProblem: View {
                 }
             }
 
-            Slide(header: "Suppose we're asked to design a button…") {
+            Slide(header: "Suppose we're asked to make a button…") {
                 #CodePreview {
                     PrimaryButton(title: "Press me", action: {})
                 }

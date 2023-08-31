@@ -17,9 +17,14 @@ struct TitleSlideStyle: SlideStyle {
 
                 configuration.header
                     .font(.system(size: multiplier * 100, weight: .light, design: .rounded))
+                    .foregroundColor(.orange)
 
                 configuration.content
                     .font(.system(size: multiplier * 70, weight: .light, design: .rounded))
+
+                configuration.footer
+                    .font(.system(size: multiplier * 50, weight: .light, design: .rounded))
+                    .padding(multiplier * 50)
             }
             .multilineTextAlignment(.center)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
@@ -66,7 +71,7 @@ struct ContentSlideStyle: SlideStyle {
             }
             .multilineTextAlignment(.leading)
             .frame(maxWidth: .infinity, maxHeight: .infinity)
-            .padding(scale * 8)
+            .padding(scale * 18)
             .codeStyle(.fitting(idealSize: scale * 14))
         }
     }

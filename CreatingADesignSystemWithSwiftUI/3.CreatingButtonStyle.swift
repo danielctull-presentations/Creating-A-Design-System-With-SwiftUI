@@ -36,11 +36,12 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Creating a Button Style") {
+            Slide(header: "Creating a primary button style") {
                 #Code {
                     struct PrimaryButtonStyle: ButtonStyle {
 
                         func makeBody(configuration: Configuration) -> some View {
+
                             configuration.label
                                 .font(.system(size: 60))
                                 .padding(32)
@@ -51,7 +52,7 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Suppose we're asked to design a button…") {
+            Slide(header: "Using the primary button style") {
                 #CodePreview {
                     Button("Press me", action: {})
                         .buttonStyle(PrimaryButtonStyle())

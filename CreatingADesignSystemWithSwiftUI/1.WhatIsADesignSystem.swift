@@ -13,8 +13,6 @@ struct WhatIsADesignSystem: View {
                     Bullet("Common resources")
                 }
             }
-
-            Slide(header: "S") {}
         }
     }
 }

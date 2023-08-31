@@ -3,10 +3,20 @@ import SlideUI
 import SwiftUI
 
 struct Title: View {
-
     var body: some View {
         Slide(header: "Creating a Design System with SwiftUI") {
             Text("Daniel Tull")
+        }
+        .slideStyle(.title)
+    }
+}
+
+struct End: View {
+
+
+    var body: some View {
+        Slide(header: "Daniel Tull") {
+            Text("danieltull.co.uk")
         }
         .slideStyle(.title)
     }
@@ -19,20 +29,24 @@ struct ContentView: View {
 
             Title()
 
-//            WhatIsADesignSystem()
+            WhatIsADesignSystem()
 
-//            DefiningTheProblem()
+            DefiningTheProblem()
 
-//            CreatingButtonStyle()
+            CreatingButtonStyle()
 
-//            LabelButtons()
+            LabelButtons()
 
             CreatingLabelStyleButton()
 
-            // Start with a button using Label.
+            NewButtonLayout()
 
+            CreatingDetail()
 
+            Summary()
+
+            End()
         }
-        .slideStyle(.content(alignment: .leading))
+        .slideStyle(.content(alignment: .center))
     }
 }

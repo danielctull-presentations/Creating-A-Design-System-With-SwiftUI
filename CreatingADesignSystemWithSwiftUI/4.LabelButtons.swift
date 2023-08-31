@@ -49,7 +49,7 @@ struct LabelButtons: View {
     var body: some View {
         Group {
 
-            Slide {
+            Slide(header: "And also text with images") {
                 #CodePreview {
                     Button("Text",
                            systemImage: "square.and.arrow.up",
@@ -58,7 +58,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "") {
+            Slide(header: "\"It'd be great if we could increase the spacing\"") {
                 Code {
                     """
                     struct TextImageButton: View {
@@ -82,7 +82,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "") {
+            Slide(header: "\"It'd be great if we could increase the spacing\"") {
                 #CodePreview {
                     TextImageButton(
                         title: "Text",
@@ -92,7 +92,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide {
+            Slide(header: "What is this Button initialiser?") {
                 #Code {
                     Button("Text",
                            systemImage: "square.and.arrow.up",
@@ -100,10 +100,11 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide {
+            Slide(header: "Button uses the Label type") {
                 Code {
                     """
                     extension Button where Label == SwiftUI.Label<Text, Image> {
+
                         public init(
                             _ titleKey: LocalizedStringKey,
                             systemImage: String,
@@ -114,10 +115,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "What is a Label?") {}
-                .slideStyle(.title)
-
-            Slide {
+            Slide(header: "What is a Label?") {
                 Code {
                     """
                     public struct Label<Title: View, Icon: View>: View {
@@ -134,7 +132,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide {
+            Slide(header: "What is a Label?") {
                 #CodePreview {
                     Label {
                         Text("Text")
@@ -144,7 +142,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide {
+            Slide(header: "Label has a short initialiser for Text and Image") {
                 Code {
                     """
                     extension Label where Title == Text, Icon == Image {
@@ -154,7 +152,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide {
+            Slide(header: "Label has a short initialiser for Text and Image") {
                 #CodePreview {
                     Label("Text", systemImage: "square.and.arrow.up")
                 }
