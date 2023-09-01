@@ -82,7 +82,7 @@ struct ContentSlideStyle: SlideStyle {
         }
         .foregroundColor(.black)
         .background(.white)
-        .codePreviewStyle(.vertical)
+        .codePreviewStyle(.nicelySpacedHorizontal)
     }
 }
 
@@ -109,6 +109,7 @@ struct FittingCodeStyle: CodeStyle {
         ViewThatFits {
             ForEach(sizes, id: \.self) { size in
                 configuration.code
+                    .foregroundColor(Color(white: 0.2))
                     .lineSpacing(CGFloat(size) / 8)
                     .font(.system(size: CGFloat(size), weight: weight, design: .monospaced))
             }
@@ -152,4 +153,25 @@ struct Scale<Content: View>: View {
             content().environment(\.scale, proxy.size.height / 300)
         }
     }
+}
+
+// MARK: - Code Preview Style
+
+
+private struct NicelySpacedHorizontalCodePreviewStyle: CodePreviewStyle {
+
+    @Environment(\.scale) private var scale
+
+    func makeBody(configuration: Configuration) -> some View {
+        HStack(spacing: 0) {
+            configuration.code
+            Spacer(minLength: scale * 16)
+            configuration.content
+            Spacer()
+        }
+    }
+}
+
+extension CodePreviewStyle where Self == NicelySpacedHorizontalCodePreviewStyle {
+    fileprivate static var nicelySpacedHorizontal: Self { Self() }
 }

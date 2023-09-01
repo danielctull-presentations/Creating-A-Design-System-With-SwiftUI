@@ -6,17 +6,20 @@ private struct VeritcalTextButton: View {
 
     let title: String
     let subtitle: String
+    let caption: String
     let action: () -> Void
 
     var body: some View {
         Button {
             action()
         } label: {
-            VStack {
+            VStack(alignment: .leading) {
                 Text(title)
                     .font(.system(size: 60))
                 Text(subtitle)
                     .font(.system(size: 45))
+                Text(caption)
+                    .font(.system(size: 30))
             }
         }
     }
@@ -53,28 +56,29 @@ struct NewButtonLayout: View {
         Group {
 
             Slide {
-                Code {
-                    """
+                #Code {
                     struct VeritcalTextButton: View {
 
                         let title: String
                         let subtitle: String
+                        let caption: String
                         let action: () -> Void
 
                         var body: some View {
                             Button {
                                 action()
                             } label: {
-                                VStack {
+                                VStack(alignment: .leading) {
                                     Text(title)
                                         .font(.system(size: 60))
                                     Text(subtitle)
                                         .font(.system(size: 45))
+                                    Text(caption)
+                                        .font(.system(size: 30))
                                 }
                             }
                         }
                     }
-                    """
                 }
             }
 
@@ -83,6 +87,7 @@ struct NewButtonLayout: View {
                     VeritcalTextButton(
                         title: "Title",
                         subtitle: "Subtitle",
+                        caption: "Caption",
                         action: {})
                     .buttonStyle(.primary)
                 }

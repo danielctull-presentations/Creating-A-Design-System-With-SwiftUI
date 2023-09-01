@@ -9,10 +9,10 @@ struct Summary: View {
 
             Slide(header: "Summary") {
                 BulletedList {
-                    Bullet("Use ButtonStyle to style buttons")
-                    Bullet("Use LabelStyle to style icon & text in buttons")
-                    Bullet("Create your own stylable containers to use in buttons")
-
+                    Bullet("Prefer providing custom styles over views")
+                    Bullet("Nest styles to customise for different contexts")
+                    Bullet("Create your own stylable semantic containers")
+                    Bullet("Add initialisers to extend standard types")
                 }
             }
         }

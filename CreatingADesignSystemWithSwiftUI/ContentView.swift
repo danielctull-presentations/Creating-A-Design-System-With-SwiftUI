@@ -43,6 +43,10 @@ struct ContentView: View {
 
             CreatingDetail()
 
+            CreatingButtonDetail()
+
+            TidyingUp()
+
             Summary()
 
             End()

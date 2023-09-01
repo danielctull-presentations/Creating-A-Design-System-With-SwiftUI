@@ -8,10 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		65093BCA2A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65093BC92A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift */; };
+		6558564E2AA1ED1000384B1C /* 9.TidyingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */; };
 		656B441B2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B441A2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift */; };
 		656B441F2AA0950300F13B68 /* 7.CreatingDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B441E2AA0950300F13B68 /* 7.CreatingDetail.swift */; };
 		656B44212AA0951E00F13B68 /* 6.NewButtonLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B44202AA0951E00F13B68 /* 6.NewButtonLayout.swift */; };
 		656B44232AA0959300F13B68 /* 10.Summary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B44222AA0959300F13B68 /* 10.Summary.swift */; };
+		656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */; };
 		65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */; };
 		65C407F32AA0877F00FA9A1E /* 4.LabelButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C407F22AA0877F00FA9A1E /* 4.LabelButtons.swift */; };
 		65ED070C2A9F548900BDC5AB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED070B2A9F548900BDC5AB /* File.swift */; };
@@ -26,10 +28,12 @@
 
 /* Begin PBXFileReference section */
 		65093BC92A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.DefiningTheProblem.swift; sourceTree = "<group>"; };
+		6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.TidyingUp.swift; sourceTree = "<group>"; };
 		656B441A2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.CreatingLabelStyle.swift; sourceTree = "<group>"; };
 		656B441E2AA0950300F13B68 /* 7.CreatingDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 7.CreatingDetail.swift; sourceTree = "<group>"; };
 		656B44202AA0951E00F13B68 /* 6.NewButtonLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = 6.NewButtonLayout.swift; sourceTree = "<group>"; };
 		656B44222AA0959300F13B68 /* 10.Summary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 10.Summary.swift; sourceTree = "<group>"; };
+		656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8.CreatingButtonDetail.swift; sourceTree = "<group>"; };
 		65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.WhatIsADesignSystem.swift; sourceTree = "<group>"; };
 		65C407F22AA0877F00FA9A1E /* 4.LabelButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.LabelButtons.swift; sourceTree = "<group>"; };
 		65ED070B2A9F548900BDC5AB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
@@ -84,6 +88,8 @@
 				656B441A2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift */,
 				656B44202AA0951E00F13B68 /* 6.NewButtonLayout.swift */,
 				656B441E2AA0950300F13B68 /* 7.CreatingDetail.swift */,
+				656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */,
+				6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */,
 				656B44222AA0959300F13B68 /* 10.Summary.swift */,
 				65ED951F2A7CE33A009D2DFC /* Styles.swift */,
 				65ED95112A7CE27D009D2DFC /* Assets.xcassets */,
@@ -181,12 +187,14 @@
 				656B44212AA0951E00F13B68 /* 6.NewButtonLayout.swift in Sources */,
 				65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */,
 				656B441F2AA0950300F13B68 /* 7.CreatingDetail.swift in Sources */,
+				6558564E2AA1ED1000384B1C /* 9.TidyingUp.swift in Sources */,
 				656B44232AA0959300F13B68 /* 10.Summary.swift in Sources */,
 				65C407F32AA0877F00FA9A1E /* 4.LabelButtons.swift in Sources */,
 				65ED070C2A9F548900BDC5AB /* File.swift in Sources */,
 				65ED95202A7CE33A009D2DFC /* Styles.swift in Sources */,
 				65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */,
 				656B441B2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift in Sources */,
+				656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */,
 				65ED950E2A7CE27B009D2DFC /* App.swift in Sources */,
 				65093BCA2A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift in Sources */,
 			);
@@ -332,7 +340,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.4;
@@ -370,7 +378,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.4;

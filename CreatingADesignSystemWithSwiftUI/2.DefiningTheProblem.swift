@@ -70,12 +70,6 @@ struct DefiningTheProblem: View {
             }
 
             Slide(header: "\"Oh! Of course we need to support images…\"") {
-                #CodePreview {
-                    PrimaryImageButton(image: Image(systemName: "square.and.arrow.up"), action: {})
-                }
-            }
-
-            Slide(header: "\"Oh! Of course we need to support images…\"") {
                 #Code {
                     struct PrimaryImageButton: View {
 
@@ -94,6 +88,12 @@ struct DefiningTheProblem: View {
                             .foregroundColor(.white)
                         }
                     }
+                }
+            }
+
+            Slide(header: "\"Oh! Of course we need to support images…\"") {
+                #CodePreview {
+                    PrimaryImageButton(image: Image(systemName: "square.and.arrow.up"), action: {})
                 }
             }
 
