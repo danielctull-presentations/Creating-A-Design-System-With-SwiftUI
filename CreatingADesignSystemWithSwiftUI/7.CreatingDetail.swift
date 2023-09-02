@@ -287,9 +287,9 @@ struct CreatingDetail: View {
             Slide(header: "") {
                 #CodePreview {
                     Detail {
-                        Text("Heading")
+                        Text("Title")
                     } subtitle: {
-                        Text("Sub heading")
+                        Text("Subtitle")
                     } caption: {
                         Text("Caption")
                     }
