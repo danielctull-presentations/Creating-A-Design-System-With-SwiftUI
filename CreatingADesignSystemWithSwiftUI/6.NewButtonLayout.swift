@@ -54,8 +54,19 @@ struct NewButtonLayout: View {
 
     var body: some View {
         Group {
+            
+            Slide(header: #""Can we have loads of lines in our button?""#) {}
 
-            Slide {
+            Slide(header: #""Can we have loads of lines in our button?""#) {
+                VeritcalTextButton(
+                    title: "Title",
+                    subtitle: "Subtitle",
+                    caption: "Caption",
+                    action: {})
+                .buttonStyle(.primary)
+            }
+
+            Slide(header: #""Can we have loads of lines in our button?""#) {
                 #Code {
                     struct VeritcalTextButton: View {
 

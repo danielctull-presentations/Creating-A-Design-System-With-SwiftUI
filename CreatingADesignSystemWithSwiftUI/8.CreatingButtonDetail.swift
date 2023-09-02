@@ -70,10 +70,10 @@ struct CreatingButtonDetail: View {
     var body: some View {
         Group {
 
-            Slide(header: "Creating a semantic container") {
+            Slide(header: "Create a Button initialiser") {
                 Code {
                     """
-                    extension Button<Detail<Text, Text, Text>> {
+                    extension Button where Label == Detail<Text, Text, Text> {
 
                         init(
                             title: LocalizedStringKey,

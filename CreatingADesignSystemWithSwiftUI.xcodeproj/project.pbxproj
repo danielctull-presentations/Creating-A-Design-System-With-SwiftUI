@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63B02BC52AA344EA00840345 /* SlideUIExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B02BC42AA344EA00840345 /* SlideUIExtensions.swift */; };
 		65093BCA2A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65093BC92A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift */; };
 		6558564E2AA1ED1000384B1C /* 9.TidyingUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */; };
 		656B441B2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B441A2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63B02BC42AA344EA00840345 /* SlideUIExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideUIExtensions.swift; sourceTree = "<group>"; };
 		65093BC92A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 2.DefiningTheProblem.swift; sourceTree = "<group>"; };
 		6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 9.TidyingUp.swift; sourceTree = "<group>"; };
 		656B441A2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 5.CreatingLabelStyle.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				6558564D2AA1ED1000384B1C /* 9.TidyingUp.swift */,
 				656B44222AA0959300F13B68 /* 10.Summary.swift */,
 				65ED951F2A7CE33A009D2DFC /* Styles.swift */,
+				63B02BC42AA344EA00840345 /* SlideUIExtensions.swift */,
 				65ED95112A7CE27D009D2DFC /* Assets.xcassets */,
 				65ED95132A7CE27D009D2DFC /* CreatingADesignSystemWithSwiftUI.entitlements */,
 				65ED95142A7CE27D009D2DFC /* Preview Content */,
@@ -197,6 +200,7 @@
 				656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */,
 				65ED950E2A7CE27B009D2DFC /* App.swift in Sources */,
 				65093BCA2A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift in Sources */,
+				63B02BC52AA344EA00840345 /* SlideUIExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

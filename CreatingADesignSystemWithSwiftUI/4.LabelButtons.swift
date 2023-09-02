@@ -58,7 +58,9 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "\"It'd be great if we could increase the spacing\"") {
+            Slide(header: "\"It'd be great if we could increase the spacing\"") {}
+
+            Slide(header: "Create a view to wrap Button??") {
                 Code {
                     """
                     struct TextImageButton: View {
@@ -82,7 +84,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "\"It'd be great if we could increase the spacing\"") {
+            Slide(header: "Create a view to wrap Button??") {
                 #CodePreview {
                     TextImageButton(
                         title: "Text",
