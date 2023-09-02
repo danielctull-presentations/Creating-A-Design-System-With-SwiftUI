@@ -116,6 +116,35 @@ struct TidyingUp: View {
                     .buttonStyle(.primary)
                 }
             }
+
+            Slide(header: "One button style, much content") {
+                #CodePreview {
+                    VStack {
+
+                        Button(
+                            "Title",
+                            action: {})
+
+                        Button(
+                            "Title",
+                            systemImage: "square.and.arrow.up",
+                            action: {})
+
+                        Button(
+                            title: "Title",
+                            subtitle: "Subtitle",
+                            caption: "Caption",
+                            action: {})
+
+                        Button(
+                            title: "Title",
+                            subtitle: "Subtitle",
+                            systemImage: "square.and.arrow.up",
+                            action: {})
+                    }
+                    .buttonStyle(.primary)
+                }
+            }
         }
     }
 }
