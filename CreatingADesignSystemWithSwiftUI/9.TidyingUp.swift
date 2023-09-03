@@ -75,7 +75,7 @@ struct TidyingUp: View {
     var body: some View {
         Group {
 
-            Slide(header: "Making a nice Button initialiser") {
+            Slide("Making a nice Button initialiser") {
                 Code {
                     """
                     extension Button<Label<Detail<Text, Text, EmptyView>, Image>> {
@@ -106,7 +106,7 @@ struct TidyingUp: View {
                 }
             }
 
-            Slide(header: "Making a nice Button initialiser") {
+            Slide("Making a nice Button initialiser") {
                 #CodePreview {
                     Button(
                         title: "Title",
@@ -117,7 +117,7 @@ struct TidyingUp: View {
                 }
             }
 
-            Slide(header: "One button style, much content") {
+            Slide("One button style, much content") {
                 #CodePreview {
                     VStack {
 

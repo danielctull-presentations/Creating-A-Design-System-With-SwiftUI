@@ -22,7 +22,7 @@ struct CreatingButtonStyle: View {
     var body: some View {
         Group {
 
-            Slide(header: "ButtonStyle") {
+            Slide("ButtonStyle") {
                 Code {
                     """
                     public protocol ButtonStyle {
@@ -36,7 +36,7 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Creating a primary button style") {
+            Slide("Creating a primary button style") {
                 #Code {
                     struct PrimaryButtonStyle: ButtonStyle {
 
@@ -52,14 +52,14 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Using the primary button style") {
+            Slide("Using the primary button style") {
                 #CodePreview {
                     Button("Press me", action: {})
                         .buttonStyle(PrimaryButtonStyle())
                 }
             }
 
-            Slide(header: "Ah, but what about discoverability?") {
+            Slide("Ah, but what about discoverability?") {
                 Code {
                     """
                     extension ButtonStyle where Self == PrimaryButtonStyle {
@@ -69,14 +69,14 @@ struct CreatingButtonStyle: View {
                 }
             }
 
-            Slide(header: "Ah, but what about discoverability?") {
+            Slide("Ah, but what about discoverability?") {
                 #CodePreview {
                     Button("Press me", action: {})
                         .buttonStyle(.primary)
                 }
             }
 
-            Slide(header: "We get image handling for nothing!") {
+            Slide("We get image handling for nothing!") {
                 #CodePreview {
                     Button {
                     } label: {

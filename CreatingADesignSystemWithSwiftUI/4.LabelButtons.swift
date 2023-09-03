@@ -49,7 +49,7 @@ struct LabelButtons: View {
     var body: some View {
         Group {
 
-            Slide(header: "And also text with images") {
+            Slide("And also text with images") {
                 #CodePreview {
                     Button("Text",
                            systemImage: "square.and.arrow.up",
@@ -58,9 +58,15 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "\"It'd be great if we could increase the spacing\"") {}
+            Slide("\"It'd be great if we could increase the spacing between the icon and text\"") {
+                TextImageButton(
+                    title: "Text",
+                    image: Image(systemName: "square.and.arrow.up"),
+                    action: {})
+                .buttonStyle(.primary)
+            }
 
-            Slide(header: "Create a view to wrap Button??") {
+            Slide("Create a view to wrap Button??") {
                 Code {
                     """
                     struct TextImageButton: View {
@@ -84,7 +90,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "Create a view to wrap Button??") {
+            Slide("Create a view to wrap Button??") {
                 #CodePreview {
                     TextImageButton(
                         title: "Text",
@@ -94,7 +100,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "What is this Button initialiser?") {
+            Slide("What is this Button initialiser?") {
                 #Code {
                     Button("Text",
                            systemImage: "square.and.arrow.up",
@@ -102,7 +108,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "Button uses the Label type") {
+            Slide("Button uses the Label type") {
                 Code {
                     """
                     extension Button where Label == SwiftUI.Label<Text, Image> {
@@ -117,7 +123,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "What is a Label?") {
+            Slide("What is a Label?") {
                 Code {
                     """
                     public struct Label<Title: View, Icon: View>: View {
@@ -134,7 +140,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "What is a Label?") {
+            Slide("What is a Label?") {
                 #CodePreview {
                     Label {
                         Text("Text")
@@ -144,7 +150,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "Label has a short initialiser for Text and Image") {
+            Slide("Label has a short initialiser for Text and Image") {
                 Code {
                     """
                     extension Label where Title == Text, Icon == Image {
@@ -154,7 +160,7 @@ struct LabelButtons: View {
                 }
             }
 
-            Slide(header: "Label has a short initialiser for Text and Image") {
+            Slide("Label has a short initialiser for Text and Image") {
                 #CodePreview {
                     Label("Text", systemImage: "square.and.arrow.up")
                 }

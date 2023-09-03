@@ -70,7 +70,7 @@ struct CreatingButtonDetail: View {
     var body: some View {
         Group {
 
-            Slide(header: "Create a Button initialiser") {
+            Slide("Create a Button initialiser") {
                 Code {
                     """
                     extension Button where Label == Detail<Text, Text, Text> {
@@ -96,7 +96,7 @@ struct CreatingButtonDetail: View {
                 }
             }
 
-            Slide(header: "Style Detail inside PrimaryButtonStyle") {
+            Slide("Style Detail inside PrimaryButtonStyle") {
                 #Code {
                     struct PrimaryButtonDetailStyle: DetailStyle {
 
@@ -118,7 +118,7 @@ struct CreatingButtonDetail: View {
                 }
             }
 
-            Slide(header: "Using the Button detail initialiser") {
+            Slide("Using the Button detail initialiser") {
                 #CodePreview {
                     Button(
                         title: "Title",
@@ -129,7 +129,7 @@ struct CreatingButtonDetail: View {
                 }
             }
 
-            Slide(header: "Styles nest!") {
+            Slide("Styles nest!") {
                 #CodePreview {
                     Button {
                     } label: {

@@ -41,11 +41,11 @@ struct DefiningTheProblem: View {
     var body: some View {
         Group {
 
-            Slide(header: "Suppose we're asked to make a button…") {
+            Slide("Suppose we're asked to make a button…") {
                 PrimaryButton(title: "Press me", action: {})
             }
 
-            Slide(header: "Suppose we're asked to make a button…") {
+            Slide("Suppose we're asked to make a button…") {
                 #Code {
                     struct PrimaryButton: View {
 
@@ -63,13 +63,13 @@ struct DefiningTheProblem: View {
                 }
             }
 
-            Slide(header: "Suppose we're asked to make a button…") {
+            Slide("Suppose we're asked to make a button…") {
                 #CodePreview {
                     PrimaryButton(title: "Press me", action: {})
                 }
             }
 
-            Slide(header: "\"Oh! Of course we need to support images…\"") {
+            Slide("\"Oh! Of course we need to support images…\"") {
                 #Code {
                     struct PrimaryImageButton: View {
 
@@ -91,13 +91,13 @@ struct DefiningTheProblem: View {
                 }
             }
 
-            Slide(header: "\"Oh! Of course we need to support images…\"") {
+            Slide("\"Oh! Of course we need to support images…\"") {
                 #CodePreview {
                     PrimaryImageButton(image: Image(systemName: "square.and.arrow.up"), action: {})
                 }
             }
 
-            Slide(header: "What are the problems here?") {
+            Slide("What are the problems here?") {
                 BulletedList {
                     Bullet("Multiple places to change for a single style change")
                     Bullet("Isn't general for any type of content")

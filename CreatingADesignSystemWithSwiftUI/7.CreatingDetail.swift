@@ -116,7 +116,7 @@ struct CreatingDetail: View {
     var body: some View {
         Group {
 
-            Slide(header: "Create a semantic container") {
+            Slide("Create a semantic container") {
                 #Code {
                     struct Detail<Title: View, Subtitle: View, Caption: View>: View {
 
@@ -145,7 +145,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "Style the semantic container") {
+            Slide("Style the semantic container") {
                 Code {
                     """
                     protocol DetailStyle: DynamicProperty {
@@ -159,7 +159,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "What's in a configuration anyway?") {
+            Slide("What's in a configuration anyway?") {
                 #Code {
                     struct DetailStyleConfiguration {
 
@@ -188,7 +188,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "Set the style in the environment") {
+            Slide("Set the style in the environment") {
                 Code {
                     #"""
                     struct DetailStyleKey: EnvironmentKey {
@@ -213,7 +213,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "Provide a default style") {
+            Slide("Provide a default style") {
                 #Code {
                     struct PlainDetailStyle: DetailStyle {
 
@@ -231,7 +231,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "Resolve the style") {
+            Slide("Resolve the style") {
                 Code {
                     """
                     extension DetailStyle {
@@ -254,7 +254,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "Use the style in the Detail view") {
+            Slide("Use the style in the Detail view") {
                 #Code {
                     struct Detail<Title: View, Subtitle: View, Caption: View>: View {
 
@@ -284,7 +284,7 @@ struct CreatingDetail: View {
                 }
             }
 
-            Slide(header: "DetailStyle with its default style") {
+            Slide("DetailStyle with its default style") {
                 #CodePreview {
                     Detail {
                         Text("Title")

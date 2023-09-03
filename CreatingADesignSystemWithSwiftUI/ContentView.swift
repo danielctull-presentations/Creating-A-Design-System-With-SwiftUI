@@ -4,7 +4,7 @@ import SwiftUI
 
 struct Title: View {
     var body: some View {
-        Slide(header: "Creating a Design System with SwiftUI") {
+        Slide("Creating a Design System with SwiftUI") {
             Text("Daniel Tull")
         }
         .slideStyle(.title)
@@ -15,7 +15,7 @@ struct End: View {
 
 
     var body: some View {
-        Slide(header: "Daniel Tull") {
+        Slide("Daniel Tull") {
             Text("danieltull.co.uk")
         }
         .slideStyle(.title)

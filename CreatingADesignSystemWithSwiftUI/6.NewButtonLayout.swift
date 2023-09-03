@@ -55,9 +55,7 @@ struct NewButtonLayout: View {
     var body: some View {
         Group {
             
-            Slide(header: #""Can we have loads of lines in our button?""#) {}
-
-            Slide(header: #""Can we have loads of lines in our button?""#) {
+            Slide(#""Can we have loads of lines in our button?""#) {
                 VeritcalTextButton(
                     title: "Title",
                     subtitle: "Subtitle",
@@ -66,7 +64,7 @@ struct NewButtonLayout: View {
                 .buttonStyle(.primary)
             }
 
-            Slide(header: #""Can we have loads of lines in our button?""#) {
+            Slide(#""Can we have loads of lines in our button?""#) {
                 #Code {
                     struct VeritcalTextButton: View {
 
@@ -104,10 +102,7 @@ struct NewButtonLayout: View {
                 }
             }
 
-            Slide {
-                Text("What if different button styles want to style the title and subtitle differently?")
-                    .multilineTextAlignment(.center)
-            }
+            Slide("What if different button styles want to style the title and subtitle differently?")
         }
         .slideStyle(.content(alignment: .center))
     }

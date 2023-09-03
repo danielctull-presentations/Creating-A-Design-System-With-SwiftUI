@@ -6,7 +6,7 @@ struct WhatIsADesignSystem: View {
 
     var body: some View {
         Group {
-            Slide(header: "What is a Design System") {}
+            Slide("What is a Design System?")
         }
     }
 }

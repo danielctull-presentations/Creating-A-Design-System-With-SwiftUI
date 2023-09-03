@@ -5,7 +5,7 @@ struct Testing: View {
 
     var body: some View {
         Group {
-            Slide(header: "Creating a Custom Button") {
+            Slide("Creating a Custom Button") {
                 #Code {
                     struct DetailButton<Title: View, Subtitle: View> {
                         let action: () -> Void
@@ -15,14 +15,14 @@ struct Testing: View {
                 }
             }
 
-            Slide(header: "Creating a Custom Button") {
+            Slide("Creating a Custom Button") {
                 #CodePreview {
                     Text("Hello")
                         .foregroundStyle(.orange)
                 }
             }
 
-            Slide(header: "Creating a Custom Button") {
+            Slide("Creating a Custom Button") {
                 Code {
                     """
                     extension DetailButton: View {
@@ -44,9 +44,9 @@ struct Testing: View {
                 }
             }
 
-            Slide(header: "Suppose we're asked to design another button…") {}
+            Slide("Suppose we're asked to design another button…")
 
-            Slide(header: "Creating a Detail view to hold") {
+            Slide("Creating a Detail view to hold") {
                 #Code {
                     struct Detail<Title: View, Subtitle: View>: View {
 
@@ -65,7 +65,7 @@ struct Testing: View {
                 }
             }
 
-            Slide(header: "SwiftUI's Label") {
+            Slide("SwiftUI's Label") {
                 Code {
                     """
                     public struct Label<Title: View, Icon: View>: View {
@@ -83,7 +83,7 @@ struct Testing: View {
                 }
             }
 
-            Slide(header: "SwiftUI's LabelStyle") {
+            Slide("SwiftUI's LabelStyle") {
                 Code {
                     """
                     public protocol LabelStyle {

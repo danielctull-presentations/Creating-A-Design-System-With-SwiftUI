@@ -32,7 +32,7 @@ struct CreatingLabelStyleButton: View {
     var body: some View {
         Group {
 
-            Slide(header: "LabelStyle") {
+            Slide("LabelStyle") {
                 Code {
                     """
                     public protocol LabelStyle {
@@ -46,7 +46,7 @@ struct CreatingLabelStyleButton: View {
                 }
             }
 
-            Slide(header: "Creating a label style") {
+            Slide("Creating a label style") {
                 #Code {
                     struct PrimaryButtonLabelStyle: LabelStyle {
 
@@ -61,7 +61,7 @@ struct CreatingLabelStyleButton: View {
                 }
             }
 
-            Slide(header: "Use the label style in our primary button style") {
+            Slide("Use the label style in our primary button style") {
                 #Code {
                     struct PrimaryButtonStyle: ButtonStyle {
 
@@ -78,7 +78,7 @@ struct CreatingLabelStyleButton: View {
                 }
             }
 
-            Slide(header: "Use the label style in our primary button style") {
+            Slide("Use the label style in our primary button style") {
                 #CodePreview {
                     Button(
                         "Text",

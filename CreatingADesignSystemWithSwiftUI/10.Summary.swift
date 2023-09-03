@@ -7,7 +7,7 @@ struct Summary: View {
     var body: some View {
         Group {
 
-            Slide(header: "Summary") {
+            Slide("Summary") {
                 BulletedList {
                     Bullet("Prefer providing custom styles over views")
                     Bullet("Nest styles to customise for different contexts")
