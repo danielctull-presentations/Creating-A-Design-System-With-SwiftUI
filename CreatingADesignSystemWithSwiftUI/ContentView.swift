@@ -45,7 +45,7 @@ struct ContentView: View {
 
             CreatingButtonDetail()
 
-            TidyingUp()
+            UsingEmptyView()
 
             Summary()
 

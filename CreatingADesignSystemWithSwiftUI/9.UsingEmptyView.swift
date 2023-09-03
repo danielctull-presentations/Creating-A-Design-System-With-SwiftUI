@@ -45,7 +45,7 @@ extension ButtonStyle where Self == PrimaryButtonStyle {
 
 // MARK: - Detail Button Initialiser
 
-extension Button<Label<Detail<Text, Text, EmptyView>, Image>> {
+extension Button where Label == SwiftUI.Label<Detail<Text, Text, EmptyView>, Image> {
 
     init(
         title: LocalizedStringKey,
@@ -65,20 +65,48 @@ extension Button<Label<Detail<Text, Text, EmptyView>, Image>> {
             } icon: {
                 Image(systemName: systemImage)
             }
-
         }
     }
 }
 
-struct TidyingUp: View {
+struct UsingEmptyView: View {
 
     var body: some View {
         Group {
 
-            Slide("Making a nice Button initialiser") {
+            Slide("What if we don't want a caption?") {
+                Button(
+                    title: "Title",
+                    subtitle: "Subtitle",
+                    systemImage: "square.and.arrow.up",
+                    action: {})
+                .buttonStyle(.primary)
+            }
+
+            Slide("What if we don't want a caption?") {
+                #CodePreview {
+                    Button {
+                    } label: {
+                        Label {
+                            Detail {
+                                Text("Title")
+                            } subtitle: {
+                                Text("Subtitle")
+                            } caption: {
+                                EmptyView()
+                            }
+                        } icon: {
+                            Image(systemName: "square.and.arrow.up")
+                        }
+                    }
+                    .buttonStyle(.primary)
+                }
+            }
+
+            Slide("What if we don't want a caption?") {
                 Code {
                     """
-                    extension Button<Label<Detail<Text, Text, EmptyView>, Image>> {
+                    extension Button where Label == SwiftUI.Label<Detail<Text, Text, EmptyView>, Image> {
 
                         init(
                             title: LocalizedStringKey,
@@ -106,42 +134,13 @@ struct TidyingUp: View {
                 }
             }
 
-            Slide("Making a nice Button initialiser") {
+            Slide("What if we don't want a caption?") {
                 #CodePreview {
                     Button(
                         title: "Title",
                         subtitle: "Subtitle",
                         systemImage: "square.and.arrow.up",
                         action: {})
-                    .buttonStyle(.primary)
-                }
-            }
-
-            Slide("One button style, much content") {
-                #CodePreview {
-                    VStack {
-
-                        Button(
-                            "Title",
-                            action: {})
-
-                        Button(
-                            "Title",
-                            systemImage: "square.and.arrow.up",
-                            action: {})
-
-                        Button(
-                            title: "Title",
-                            subtitle: "Subtitle",
-                            caption: "Caption",
-                            action: {})
-
-                        Button(
-                            title: "Title",
-                            subtitle: "Subtitle",
-                            systemImage: "square.and.arrow.up",
-                            action: {})
-                    }
                     .buttonStyle(.primary)
                 }
             }
