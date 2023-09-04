@@ -425,7 +425,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielctull-playground/SlideUI";
 			requirement = {
-				branch = main;
+				branch = "syntax-highlighting";
 				kind = branch;
 			};
 		};
