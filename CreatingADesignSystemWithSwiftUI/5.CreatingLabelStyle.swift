@@ -61,6 +61,13 @@ struct CreatingLabelStyleButton: View {
                 }
             }
 
+            Slide("Apply a label style") {
+                #CodePreview {
+                    Label("Text", systemImage: "square.and.arrow.up")
+                        .labelStyle(PrimaryButtonLabelStyle())
+                }
+            }
+
             Slide("Use the label style in our primary button style") {
                 #Code {
                     struct PrimaryButtonStyle: ButtonStyle {
