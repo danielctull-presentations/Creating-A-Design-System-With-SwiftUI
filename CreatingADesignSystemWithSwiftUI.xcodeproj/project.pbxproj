@@ -17,10 +17,8 @@
 		656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */; };
 		65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */; };
 		65C407F32AA0877F00FA9A1E /* 4.LabelButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C407F22AA0877F00FA9A1E /* 4.LabelButtons.swift */; };
-		65ED070C2A9F548900BDC5AB /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED070B2A9F548900BDC5AB /* File.swift */; };
 		65ED070E2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED070D2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift */; };
 		65ED950E2A7CE27B009D2DFC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950D2A7CE27B009D2DFC /* App.swift */; };
-		65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950F2A7CE27B009D2DFC /* ContentView.swift */; };
 		65ED95122A7CE27D009D2DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95112A7CE27D009D2DFC /* Assets.xcassets */; };
 		65ED95162A7CE27D009D2DFC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95152A7CE27D009D2DFC /* Preview Assets.xcassets */; };
 		65ED951E2A7CE2B3009D2DFC /* SlideUI in Frameworks */ = {isa = PBXBuildFile; productRef = 65ED951D2A7CE2B3009D2DFC /* SlideUI */; };
@@ -38,11 +36,9 @@
 		656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 8.CreatingButtonDetail.swift; sourceTree = "<group>"; };
 		65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 1.WhatIsADesignSystem.swift; sourceTree = "<group>"; };
 		65C407F22AA0877F00FA9A1E /* 4.LabelButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 4.LabelButtons.swift; sourceTree = "<group>"; };
-		65ED070B2A9F548900BDC5AB /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		65ED070D2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3.CreatingButtonStyle.swift; sourceTree = "<group>"; };
 		65ED950A2A7CE27B009D2DFC /* CreatingADesignSystemWithSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreatingADesignSystemWithSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65ED950D2A7CE27B009D2DFC /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
-		65ED950F2A7CE27B009D2DFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		65ED95112A7CE27D009D2DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65ED95132A7CE27D009D2DFC /* CreatingADesignSystemWithSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CreatingADesignSystemWithSwiftUI.entitlements; sourceTree = "<group>"; };
 		65ED95152A7CE27D009D2DFC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -81,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				65ED950D2A7CE27B009D2DFC /* App.swift */,
-				65ED070B2A9F548900BDC5AB /* File.swift */,
-				65ED950F2A7CE27B009D2DFC /* ContentView.swift */,
 				65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */,
 				65093BC92A88AF5900DB4AF2 /* 2.DefiningTheProblem.swift */,
 				65ED070D2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift */,
@@ -193,9 +187,7 @@
 				6558564E2AA1ED1000384B1C /* 9.UsingEmptyView.swift in Sources */,
 				656B44232AA0959300F13B68 /* 10.Summary.swift in Sources */,
 				65C407F32AA0877F00FA9A1E /* 4.LabelButtons.swift in Sources */,
-				65ED070C2A9F548900BDC5AB /* File.swift in Sources */,
 				65ED95202A7CE33A009D2DFC /* Styles.swift in Sources */,
-				65ED95102A7CE27B009D2DFC /* ContentView.swift in Sources */,
 				656B441B2AA0904C00F13B68 /* 5.CreatingLabelStyle.swift in Sources */,
 				656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */,
 				65ED950E2A7CE27B009D2DFC /* App.swift in Sources */,
@@ -425,7 +417,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/danielctull-playground/SlideUI";
 			requirement = {
-				branch = "syntax-highlighting";
+				branch = main;
 				kind = branch;
 			};
 		};

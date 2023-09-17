@@ -4,17 +4,36 @@ import SwiftUI
 
 // MARK: - Slide Initialisers
 
-extension Slide<Text, EmptyView, EmptyView> {
+extension Slide<Text, EmptyView, EmptyView, EmptyView> {
 
-    init(_ header: String) {
+    init(_ header: LocalizedStringKey) {
         self.init(header: header) {}
+    }
+}
+
+extension Slide where Header == Text, Footer == EmptyView, Notes == EmptyView {
+
+    init(_ header: LocalizedStringKey, @ViewBuilder content: () -> Content) {
+        self.init(header: header, content: content)
     }
 }
 
 extension Slide where Header == Text, Footer == EmptyView {
 
-    init(_ header: String, @ViewBuilder content: () -> Content) {
-        self.init(header: header, content: content)
+    init(
+        _ header: LocalizedStringKey,
+        @ViewBuilder content: () -> Content,
+        @ViewBuilder notes: @escaping () -> Notes
+    ) {
+        self.init {
+            content()
+        } header: {
+            Text(header)
+        } footer: {
+            EmptyView()
+        } notes: {
+            notes()
+        }
     }
 }
 
