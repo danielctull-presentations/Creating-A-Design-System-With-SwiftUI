@@ -43,7 +43,7 @@ struct Bullet<Content: View>: View {
     @Environment(\.scale) private var scale
     let content: Content
     var body: some View {
-        HStack {
+        HStack(alignment: .firstTextBaseline) {
             Text("\u{2022}")
             content
         }
