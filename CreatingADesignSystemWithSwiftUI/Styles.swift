@@ -97,22 +97,15 @@ extension CodeStyle where Self == FittingCodeStyle {
 }
 
 struct FittingCodeStyle: CodeStyle {
-
-    private let weight: Font.Weight
-    private let sizes: [Int]
-
-    fileprivate init(idealSize: CGFloat, weight: Font.Weight) {
-        self.weight = weight
-        self.sizes = (0...Int(ceil(idealSize))).reversed()
-    }
+    fileprivate let idealSize: CGFloat
+    fileprivate let weight: Font.Weight
 
     func makeBody(configuration: Configuration) -> some View {
-        ViewThatFits {
-            ForEach(sizes, id: \.self) { size in
-                configuration.code
-                    .lineSpacing(CGFloat(size) / 8)
-                    .font(.system(size: CGFloat(size), weight: weight, design: .monospaced))
-            }
+        
+        configuration.fitting(min: 3, max: idealSize) { size in
+            configuration.code
+                .lineSpacing(size / 8)
+                .font(.system(size: size, weight: weight, design: .monospaced))
         }
     }
 }
