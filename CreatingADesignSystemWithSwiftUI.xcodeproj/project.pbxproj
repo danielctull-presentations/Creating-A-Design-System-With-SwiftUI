@@ -17,6 +17,7 @@
 		656B44252AA1E46200F13B68 /* 8.CreatingButtonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 656B44242AA1E46200F13B68 /* 8.CreatingButtonDetail.swift */; };
 		65B6D3BA2A8E311800F26659 /* 1.WhatIsADesignSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65B6D3B92A8E311800F26659 /* 1.WhatIsADesignSystem.swift */; };
 		65C407F32AA0877F00FA9A1E /* 4.LabelButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65C407F22AA0877F00FA9A1E /* 4.LabelButtons.swift */; };
+		65CE7DCB2B68EC5600632B4A /* XcodeCodeHighlighting in Frameworks */ = {isa = PBXBuildFile; productRef = 65CE7DCA2B68EC5600632B4A /* XcodeCodeHighlighting */; };
 		65ED070E2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED070D2A9F59F600BDC5AB /* 3.CreatingButtonStyle.swift */; };
 		65ED950E2A7CE27B009D2DFC /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65ED950D2A7CE27B009D2DFC /* App.swift */; };
 		65ED95122A7CE27D009D2DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65ED95112A7CE27D009D2DFC /* Assets.xcassets */; };
@@ -51,17 +52,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				65ED951E2A7CE2B3009D2DFC /* SlideUI in Frameworks */,
+				65CE7DCB2B68EC5600632B4A /* XcodeCodeHighlighting in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		65CE7DC92B68EC5600632B4A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		65ED95012A7CE27B009D2DFC = {
 			isa = PBXGroup;
 			children = (
 				65ED950C2A7CE27B009D2DFC /* CreatingADesignSystemWithSwiftUI */,
 				65ED950B2A7CE27B009D2DFC /* Products */,
+				65CE7DC92B68EC5600632B4A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -122,6 +132,7 @@
 			name = CreatingADesignSystemWithSwiftUI;
 			packageProductDependencies = (
 				65ED951D2A7CE2B3009D2DFC /* SlideUI */,
+				65CE7DCA2B68EC5600632B4A /* XcodeCodeHighlighting */,
 			);
 			productName = CreatingADesignSystemWithSwiftUI;
 			productReference = 65ED950A2A7CE27B009D2DFC /* CreatingADesignSystemWithSwiftUI.app */;
@@ -424,6 +435,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		65CE7DCA2B68EC5600632B4A /* XcodeCodeHighlighting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65ED951C2A7CE2B3009D2DFC /* XCRemoteSwiftPackageReference "SlideUI" */;
+			productName = XcodeCodeHighlighting;
+		};
 		65ED951D2A7CE2B3009D2DFC /* SlideUI */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 65ED951C2A7CE2B3009D2DFC /* XCRemoteSwiftPackageReference "SlideUI" */;
